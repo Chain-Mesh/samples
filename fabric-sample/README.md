@@ -1,6 +1,6 @@
 # Hyperledger BESU Sample
 
-Sample Network Script to run
+Sample Network Script to run Solidity Smart Contracts in Hyperledger Fabric using fabric-chaincode-evm.
 
 ## Pre-Requisite
 
