@@ -15,5 +15,5 @@ export FABRIC_CFG_PATH=$PWD/../config/;
 
 # Paste Contract Adress from previous command as key to the "Args" parameter {"Args":["<contract adress>","<input from remix>"]}
 peer chaincode query -n evmcc -C mychannel -c '{"Args":["account"]}'
-peer chaincode invoke -n evmcc -C mychannel -c '{"Args":["ab491d97ebe46d4fc3bd25e1e23b78cbe9e7cb4d","6057361d0000000000000000000000000000000000000000000000000000000000000005"]}' -o localhost:7050 --tls --cafile $ORDERER_CA
-peer chaincode query -n evmcc -C mychannel -c '{"Args":["ab491d97ebe46d4fc3bd25e1e23b78cbe9e7cb4d","2e64cec1"]}'
+peer chaincode invoke -o localhost:7050 --tls --cafile $ORDERER_CA -C mychannel -n evmcc --peerAddresses localhost:7051 --tlsRootCertFiles $PEER0_ORG1_CA --peerAddresses localhost:9051 --tlsRootCertFiles $PEER0_ORG2_CA -c '{"Args":["83c75ce0cc0a62ca1a704c17a82cbfdafbb55a0f","6057361d0000000000000000000000000000000000000000000000000000000000000007"]}'
+peer chaincode query -n evmcc -C mychannel -c '{"Args":["83c75ce0cc0a62ca1a704c17a82cbfdafbb55a0f","2e64cec1"]}'
