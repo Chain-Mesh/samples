@@ -1,2 +1,6 @@
 .idea/
 *.iml
+fabric-sample/metachan/resourceregistry/chaincode-go/vendor/
+fabric-sample/metachan/connection.json
+fabric-sample/mychannel/connection.json
+fabric-sample/user1@org1-example-com.json

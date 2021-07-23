@@ -24,7 +24,7 @@ ganache-cli
 3. Specify the JSON-RPC port
 
 ```
-export JSON_RPC_PORT=7545 # default - 7545
+export JSON_RPC_PORT=7545 # default Port - 7545
 ```
 
 4. Run the script
