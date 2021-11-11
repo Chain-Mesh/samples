@@ -1,0 +1,29 @@
+{
+  "authors": [
+    "Shritesh <shritesh.sj@gmail.com>"
+  ],
+  "license": "MIT",
+  "description": "Solidity component for Sidemesh",
+  "keywords": [
+    "ethereum",
+    "sidemesh",
+    "crossmesh"
+  ],
+  "links": {},
+  "sources": [
+    "./contracts/Migrations.sol",
+    "./contracts/lib/Constants.sol",
+    "./contracts/lib/Enums.sol",
+    "./contracts/lib/Structs.sol",
+    "./contracts/lib/Utils.sol",
+    "./contracts/lock/LockManager.sol",
+    "./contracts/resource/Register.sol",
+    "./contracts/resource/Verifier.sol",
+    "./contracts/sidemesh/Sidemesh.sol",
+    "./contracts/transaction/GlobalTransactionManager.sol"
+  ],
+  "dependencies": {},
+  "manifest_version": 1,
+  "package_name": "sidemesh-solidity",
+  "version": "0.0.4"
+}
