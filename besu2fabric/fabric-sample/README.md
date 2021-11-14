@@ -98,20 +98,24 @@ Install truffle globally using npm
 npm install truffle -g
 ```
 
-In another terminal go to `samples/fabric-sample/InteractContract`
+9. Deploy Sidemesh-Solidity contract and CrossNetwork Contract
 
 ```
-cd samples/fabric-sample/InteractContract
-```
-
-Run the migrations
-
-```
+cd samples/fabric-sample/hl_fabric
+npm install
+truffle install sidemesh-solidity
+truffle compile
 truffle migrate
-```
-
-Run the tests
-
-```
 truffle test
+```
+
+10. Run the Mesher service in another terminal
+
+-    Go to Mesher directory
+-    Add proper environment variables
+-    Run the networks
+
+```
+cd Mesher
+SPRING_PROFILES_ACTIVE=hl-fabric ./gradlew boolrun
 ```
